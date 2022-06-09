@@ -1,5 +1,5 @@
 <?php
-	$db_host = 'localhost';
+	$db_host = 'kikiserver2.mysql.database.azure.com';
 	$db_user = 'kikiadmin';
 	$db_pass = 'Incorrect9@';
 	$db_name = 'kikifarm';
