@@ -4,7 +4,7 @@ ob_start();
 include ('./inc/connect.inc.php'); ?>
 <?php
 
-$user_idPP = '';
+
 
 if(isset($_SESSION["user"]) ){
   //this is for shop owner
