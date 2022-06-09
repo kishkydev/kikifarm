@@ -44,7 +44,7 @@ $page_title = 'kikiFarm';
                         <a
                             id="slider-2-slide-1-layer-3" 
                             class="rs-layer ttm-btn-color-white ttm-btn-style-border ttm-btn ttm-btn-size-md"
-                            href="#" target="_self" rel="nofollow"
+                            href="signup" target="_self" rel="nofollow"
                             data-type="text"
                             data-rsp_ch="on"
                             data-xy="x:l,l,c,c;xo:246px,246px,90px,0;yo:449px,449px,302px,228px;"
@@ -72,7 +72,7 @@ $page_title = 'kikiFarm';
                         <a
                             id="slider-2-slide-1-layer-5" 
                             class="rs-layer ttm-btn-bgcolor-skincolor ttm-btn ttm-btn-size-md"
-                            href="#" target="_self" rel="nofollow"
+                            href="all-farm-products" target="_self" rel="nofollow"
                             data-type="text"
                             data-rsp_ch="on"
                             data-xy="x:l,l,c,c;xo:50px,50px,-90px,0;yo:449px,449px,302px,173px;"
@@ -118,7 +118,7 @@ $page_title = 'kikiFarm';
                         <a
                             id="slider-2-slide-2-layer-3" 
                             class="rs-layer ttm-btn-color-white ttm-btn-style-border ttm-btn ttm-btn-size-md"
-                            href="#" target="_self" rel="nofollow"
+                            href="all-farm-products" target="_self" rel="nofollow"
                             data-type="text"
                             data-rsp_ch="on"
                             data-xy="x:l,l,c,c;xo:50px,50px,-90px,0;yo:449px,449px,302px,168px;"
@@ -162,7 +162,7 @@ $page_title = 'kikiFarm';
                         <a
                             id="slider-2-slide-2-layer-6" 
                             class="rs-layer head-font"
-                            href="#" target="_self" rel="nofollow"
+                            href="signup" target="_self" rel="nofollow"
                             data-type="text"
                             data-rsp_ch="on"
                             data-xy="x:c;xo:-237px,-125px,80px,0;yo:465px,465px,314px,279px;"
