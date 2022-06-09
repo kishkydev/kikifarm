@@ -30,9 +30,12 @@ else{
 <?php
 	
 
-$user_idP = $_POST["user_idP"];
 
-$getproduct = mysqli_query($con,"SELECT * FROM products WHERE user_id='$user_idP' ORDER BY product_id DESC LIMIT ".$_POST["start"].", ".$_POST["limit"]."  ") or die (mysqli_error()); 
+
+
+
+
+$getproduct = mysqli_query($con,"SELECT * FROM products  ORDER BY product_id DESC LIMIT ".$_POST["start"].", ".$_POST["limit"]."  ") or die (mysqli_error()); 
 
 			 ?>
             
