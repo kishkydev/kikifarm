@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'kikifarm'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C7D8C4ED5E1E4F77A4790692ED5D5C79 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CBBB0F0DC9F04A3F8DFA24F86AF8B591 }}
           package: .
