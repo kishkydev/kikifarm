@@ -12,6 +12,8 @@ if(!isset($_SESSION["user"])){
  $username = '';
 }
 
+echo  $username;
+echo  $userP;
   ?>
 
 
