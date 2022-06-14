@@ -255,7 +255,7 @@ $whattext = "*kiKifarm:* Hello $usernameShop";
 
 
 
-<?php if(isset($username)) : ?><!-- to check it user logged in --> 
+ <?php if($username != '') : ?><!-- to check it user logged in -->
 
 <div class="ttm-btn-box pb-20">
     <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-icon-btn-left ttm-btn-bgcolor-darkgrey showsms" href="message?message=<?php echo $user_idPP; ?>" title="" style="color: white; font-family:tahoma; font-family:tahoma"><b>Send App message</b> <i class="fa fa-comment"></i></a>

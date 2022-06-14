@@ -298,7 +298,7 @@ if(isset($username)){
  $check_if_added_basket = mysqli_query($con,"SELECT * FROM basket WHERE added_by='$user_id' AND product_id='$product_id' ");    
             $countrow_basket = mysqli_num_rows($check_if_added_basket);
 
-}
+
                         ?>
 
 <script type="text/javascript">
@@ -363,7 +363,9 @@ if(isset($username)){
 
 
  </script>
-
+<?php
+}
+?>
 
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product"><!-- product -->

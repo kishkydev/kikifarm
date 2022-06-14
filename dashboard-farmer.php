@@ -164,7 +164,22 @@
                     <?php if($countrow > 0) : ?>
                       <a class="ttm-btn ttm-btn-size-sm ttm-btn-shape-round ttm-icon-btn-right ttm-btn-bgcolor-darkgrey follow unfollow" href="javascript:;" title="" id="unfollow" style="color: white; font-family:tahoma; font-family:tahoma"><b>Unfollow Shop</b> </a>
                     <?php else : ?>
+
+                     <?php if($username != '') : ?><!-- to check it user logged in -->
                      <a class="ttm-btn ttm-btn-size-sm ttm-btn-shape-round ttm-icon-btn-right ttm-btn-bgcolor-darkgrey follow follows" href="javascript:;" title="" id="follows" style="color: white; font-family:tahoma; font-family:tahoma"><b>Follow Shop</b> </a>
+
+
+
+                     <?php else : ?><!-- to check it user logged in -->
+
+
+
+                     <a class="ttm-btn ttm-btn-size-sm ttm-btn-shape-round ttm-icon-btn-right ttm-btn-bgcolor-darkgrey notLoggedIn" href="javascript:;" title="" id="notl1" style="color: white; font-family:tahoma; font-family:tahoma"><b>Follow Shop</b> </a>
+
+                      
+
+                     <?php endif; ?><!-- to check it user logged in -->
+
                     <?php endif; ?> 
                    
 
@@ -255,7 +270,7 @@ $whattext = "*kiKifarm:* Hello $usernameShop";
 
 
 
-<?php if(isset($username)) : ?><!-- to check it user logged in --> 
+ <?php if($username != '') : ?><!-- to check it user logged in -->
 
 <div class="ttm-btn-box pb-20">
     <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-icon-btn-left ttm-btn-bgcolor-darkgrey showsms" href="message?message=<?php echo $user_idPP; ?>" title="" style="color: white; font-family:tahoma; font-family:tahoma"><b>Send App message</b> <i class="fa fa-comment"></i></a>
