@@ -495,9 +495,10 @@ $basket_logistic_count = mysqli_num_rows($count_basket_logistic);
                                         </span>
 
                                         <?php else : ?> 
-                                        <span class="ttm-header-icon " >
-                                            <a href="signup" style="margin-left:10px; color: #7cda0a;">SignUp</a> 
-                                            <b style="color: white">|</b><a href="login" style="margin-left:10px; color: #7cda0a;">Login</a>
+                                        <span class="ttm-header-icon ttm-header-cart-link" style="">
+                                            <a href="signup" style=" color: #7cda0a; background: transparent; "><b>SignUp</b></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <b style="color: white;">|</b>
+                                            <a href="login" style="color: #7cda0a; background: transparent; "><b>Login</b></a>
                                         </span>
                                         
                                         <?php endif; ?>
