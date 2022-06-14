@@ -68,7 +68,7 @@ $user_type = $rows["user_type"];
       
       }
       else {
-        echo "<meta http-equiv=\"refresh\" content=\"0; url=https://kikifarm.com/ \" >";
+        echo "<meta http-equiv=\"refresh\" content=\"0; url=https://kikifarm-app.azurewebsites.net/ \" >";
         exit();
       }
     }
