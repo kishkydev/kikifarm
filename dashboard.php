@@ -8,12 +8,12 @@ if(!isset($userP)){
   header("Location: login");
 }
 
-if(!isset($_SESSION["user"])){
+if(!isset($username)){
  $username = '';
 }
 
-echo  $username;
-echo  $userP;
+// echo  $username;
+// echo  $userP;
   ?>
 
 
