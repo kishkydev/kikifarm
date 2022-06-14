@@ -19,7 +19,7 @@ $user_type = $rows["user_type"];
       $pix = $rows["pix"];  
 
     if($pix==''){
-    $profilepix_db = "img/b3.png";
+    $profilepix_db = "images/avatar.png";
     }
     else{
     $profilepix_db = "uploads/thumbs/$pix";
