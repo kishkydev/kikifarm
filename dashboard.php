@@ -8,7 +8,7 @@ if(!isset($userP)){
   header("Location: login");
 }
 
-if(!isset($_SESSION["user"]) || !isset($_COOKIE['user_log_in'])){
+if(!isset($_SESSION["user"])){
  $username = '';
 }
 
@@ -17,6 +17,8 @@ if(!isset($_SESSION["user"]) || !isset($_COOKIE['user_log_in'])){
 
        
 <?php
+
+
 
 //to update profile 
 //get this to insert as value inside the input form
@@ -69,10 +71,10 @@ $lg_name = $result['lg_name'];
 
 
 // to update followproduct notifcation starts...............
-if(isset($username) && $user_id != $user_idPP){
+if(isset($username) && $user_idShop != $user_idPP){
 
 
-$queryProd = mysqli_query($con,"SELECT * FROM products WHERE user_id= '$user_idPP'  "); 
+$queryProd = mysqli_query($con,"SELECT * FROM products WHERE user_id = '$user_idPP'  "); 
 
  while($rowProd = mysqli_fetch_array($queryProd)) {
  
