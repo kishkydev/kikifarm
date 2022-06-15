@@ -279,7 +279,7 @@
 
 
                                         <div class="text-left">
-                                            <button type="button" id="makeRequest" name="submit" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-skincolor" style="background: #7cda0a;">
+                                            <button type="button" id="makeRequest" name="submit" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-skincolor btn-block" style="background: #7cda0a;">
                                                 Make Product Request <span id="loading3"></span>
                                             </button>
                                         </div>
