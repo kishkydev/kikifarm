@@ -38,7 +38,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
                             <div class="widget widget_text  clearfix">
-                                <h3 class="widget-title"> About Agrotek</h3>
+                                <h3 class="widget-title"> About kikiFarm</h3>
                                 <div class="">
                                     <p>We protect the farmers, make demand easy for the consumers and we link the farmers and the consumers to the logistics individuals and companies nearby</p>
                                    <!--  <p>For everyone who is passionate about agro services, farm nurseries, farming & gardening tools suppliers and blogs.</p> -->
