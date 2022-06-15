@@ -207,5 +207,181 @@
         </div>  
 
 
+<!-- modal windows for making request........................-->
+      
+        <div id="modalshowrequest" class="modal fade" tabindex="-1" style="">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content"  style="background: #173e43;">
+                    
+                    
+                        <div class="modal-body">
+
+                    <!-- <div class="modal-header">
+                        
+                         
+
+                         
+                    </div> -->
+
+                   <p><button class="btn btn-default " data-dismiss="modal"><b class="fa fa-close"></b></button></p>
+
+                        <form id="form_wallRequest" role="form">
+                                <h5 class="text-center" style="color:white">Quickly make any food request here</h5>
+<div class="col-sm-12 col-md-12">
+     <label style="color:#7cda0a" for="request_product">Enter the Products and other comments</label>
+    <div class="form-group">
+        <textarea id="request_product" rows="4" placeholder="Products you need"  class="form-control with-border bg-white"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label style="color:#7cda0a" for="request_date">Period you need products (around 5th August, 2022)</label>
+<input class="form-control with-border bg-white" type="date" id="request_date" placeholder="Enter old price">
+    </div>
+
+<?php
+  $query_stateR = mysqli_query($con,"SELECT * FROM states"); 
+  ?>
+                                 
+                
+        <div class="form-group">
+                        <label style="color:#7cda0a" for="request_state">Select state in Nigeria where you need it</label>
+                        <select  id="request_state" class="form-control with-border bg-white">
+                            <option value="abc">Select state</option>
+    <?php while($rowRe = mysqli_fetch_assoc($query_stateR)):   ?>
+     <?php  
+    $state_nameRe = $rowRe['name'];
+      ?>
+            <option  value="<?php echo $state_nameRe; ?>"><?php echo $state_nameRe; ?></option>
+       <?php endwhile; ?>
+                    </select>
+        </div>
+
+
+    <div class="form-group">
+        <label style="color:#7cda0a" for="request_name">Your Name</label>
+        <input id="request_name" placeholder="Your Name"  class="form-control with-border bg-white">
+    </div>
+
+    <div class="form-group">
+        <label style="color:#7cda0a" for="request_phone">Your Phone</label>
+        <input id="request_phone" placeholder="Your Phone Number"  class="form-control with-border bg-white">
+    </div>
+
+    
+          
+           
+
+
+    
+
+     <p id="display-request"></p>
+
+
+
+                                        <div class="text-left">
+                                            <button type="button" id="makeRequest" name="submit" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-skincolor" style="background: #7cda0a;">
+                                                Make Product Request <span id="loading3"></span>
+                                            </button>
+                                        </div>
+
+
+
+</div>
+
+
+
+                                <!--  <button class="btn btn-danger" id="forget-pass" type="button"> Request Password</button>
+                                 <p style="color: white"><span id="display-pass"></span> -->
+                            
+                        </form>
+                         
+
+
+<script type="text/javascript">
+ 
+//............................................
+
+ $(document).on('click', '#makeRequest', function() {
+
+       // alert('wwwwww');
+             $('#loading3').html("<img src='img/loaderIcon.gif' />");
+
+           var request_product = document.getElementById('request_product').value;
+           var request_date = document.getElementById('request_date').value;
+
+           var request_name = document.getElementById('request_name').value;
+           var request_phone = document.getElementById('request_phone').value;
+            var request_state = $('#request_state').val(); 
+          
+           if(request_product.length == 0){
+                                   
+                                    $("#display-request").html("<p style='color:white; background:red; padding:10px'>Enter the product you want</p>");
+                                    $('#loading3').html("");
+                                }
+             else if(request_date.length == 0){
+                                   
+                                    $("#display-request").html("<p style='color:white; background:red; padding:10px'>Enter the date period of need</p>");
+                                    $('#loading3').html("");
+                                }
+            else if(request_name.length == 0){
+                                   
+                                    $("#display-request").html("<p style='color:white; background:red; padding:10px'>Enter your name</p>");
+                                    $('#loading3').html("");
+                                }
+            else if(request_phone.length == 0){
+                                   
+                                    $("#display-request").html("<p style='color:white; background:red; padding:10px'>Enter your phone number</p>");
+                                    $('#loading3').html("");
+                                }
+            else if(!request_state || request_state.length === 0 || request_state==='abc'){
+                                   
+                                    $("#display-request").html("<p style='color:white; background:red; padding:10px'>Enter the state</p>");
+                                    $('#loading3').html("");
+                                }
+                              else{
+        
+
+               $.ajax({
+                            url:"ajax/make-request",
+                            method:"POST",
+                            data:{request_product:request_product, request_date:request_date, request_name:request_name, request_phone:request_phone, request_state:request_state},
+                            
+                            success:function(data){
+                               //the return value from json is giving to the below id(s)
+
+                               $('#display-request').html(data);
+                               $('#loading3').html("");
+                                                      
+                      
+                             $('#form_wallRequest')[0].reset();
+                               
+                              }
+                          });
+
+                }//validate..........
+
+              });
+
+
+
+
+</script>
+
+
+                        
+
+                         
+                         
+                       </div>
+
+
+                    <div class="modal-footer">
+                         <button class="btn btn-default closer3" data-dismiss="modal"><b class="fa fa-close"></b></button>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>  
 
         
