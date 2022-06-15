@@ -261,7 +261,7 @@ $page_title = 'kikiFarm';
                             </div><!-- ttm_single_image-wrapper end -->
                         </div>
                         <div class="col-lg-2">
-                            <a href="javascript:;" class="ttm-btn ttm-btn-size-lg ttm-btn-bgcolor-skincolor mt-105 res-991-mt-40 showrequest"> <b>REQUEST HERE</b></a>
+                            <a href="javascript:;" class="ttm-btn ttm-btn-size-lg ttm-btn-bgcolor-skincolor mt-105 res-991-mt-40 showrequest text-center" style="font-family:tahoma"> REQUEST HERE</a>
                         </div>
                     </div><!-- row -->
                 </div>
@@ -295,7 +295,7 @@ $page_title = 'kikiFarm';
                                         <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="food-rescue">Check <b>Food Rescue</b></a></span></span></li>
                                         <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="logistic-in-your-area">Check <b>Logistics & Transportaion</b></a></span></span></li>
                                         <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="news-feed-nigeria">Check <b>Farming News</b></a></span></span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="#">Check <b>Request Farm Produce</b></a></span></span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content showrequest"><a href="javascript:;">Check <b>Request Farm Produce</b></a></span></span></li>
                                     </ul>
                                 </div>
                                <!--  <div class="">
