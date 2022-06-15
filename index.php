@@ -261,13 +261,24 @@ $page_title = 'kikiFarm';
                             </div><!-- ttm_single_image-wrapper end -->
                         </div>
                         <div class="col-lg-2">
-                            <a href="#" class="ttm-btn ttm-btn-size-lg ttm-btn-bgcolor-skincolor mt-105 res-991-mt-40"> <b>REQUEST HERE</b></a>
+                            <a href="javascript:;" class="ttm-btn ttm-btn-size-lg ttm-btn-bgcolor-skincolor mt-105 res-991-mt-40 showrequest"> <b>REQUEST HERE</b></a>
                         </div>
                     </div><!-- row -->
                 </div>
             </section>
             <!-- row-title-section -->
+<script type="text/javascript">
+               $(document).on('click', '.showrequest', function() {
 
+                            $('#modalshowrequest').modal("show");
+                                
+
+                                });
+
+   
+
+
+</script>
 
             <!-- aboutus-section -->
             <section class="ttm-row about-section clearfix">
@@ -278,12 +289,12 @@ $page_title = 'kikiFarm';
                                 <h3 class="fw-700">What kikiFarm Farmers & Consumers can do on kikiFarm</h3>
                                 <div class="mt-25">
                                     <ul class="ttm-list ttm-list-style-icon style2">
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="#">Check <b>Farm Items</b></a></span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="#">Check <b>Farmers' Shops</b></a></span></span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="#">Check <b>Food Tracker</b></a></span></span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="#">Check <b>Food Rescue</b></a></span></span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="#">Check <b>Logistics & Transportaion</b></a></span></span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="#">Check <b>Farming News</b></a></span></span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="farm-products">Check <b>Farm Items</b></a></span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="shops">Check <b>Farmers' Shops</b></a></span></span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="farm-products-tracker">Check <b>Food Tracker</b></a></span></span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="food-rescue">Check <b>Food Rescue</b></a></span></span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="logistic-in-your-area">Check <b>Logistics & Transportaion</b></a></span></span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="news-feed-nigeria">Check <b>Farming News</b></a></span></span></li>
                                         <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="#">Check <b>Request Farm Produce</b></a></span></span></li>
                                     </ul>
                                 </div>
