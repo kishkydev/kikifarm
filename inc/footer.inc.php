@@ -234,7 +234,7 @@
     </div>
 
     <div class="form-group">
-      <label style="color:#7cda0a" for="request_date">Period you need products (around 5th August, 2022)</label>
+      <label style="color:#7cda0a" for="request_date">Period you need products (e.g around 5th August, 2022)</label>
 <input class="form-control with-border bg-white" type="date" id="request_date" placeholder="Enter old price">
     </div>
 
