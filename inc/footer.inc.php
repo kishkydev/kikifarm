@@ -385,3 +385,32 @@
         </div>  
 
         
+
+
+
+<!-- modal windows for viewGrapgh search........................-->
+      
+        <div id="modalviewGraph" class="modal fade" tabindex="-1" style="margin-top: 150px;">
+            <div class="modal-dialog">
+                <div class="modal-content"  style=" background: #173e43;">
+                    
+                    <!-- <div class="modal-header">
+                        <p><button class="btn btn-default " data-dismiss="modal"><b class="fa fa-close"></b></button></p>
+                         <p style="color: #7cda0a;"><b>Click the image of the product to search</b> 
+
+                         </p>
+                    </div> -->
+                        <div class="modal-body">
+
+                            <div id="display-viewGraph"></div>
+  
+                       </div>
+
+                    <div class="modal-footer">
+                         <button class="btn btn-default closer3" data-dismiss="modal"><b class="fa fa-close"></b></button>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>  
