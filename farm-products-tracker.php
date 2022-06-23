@@ -496,6 +496,35 @@ if(isset($username)){
 ?>
 
 
+<script type="text/javascript">
+             
+
+  $(document).on('click', '.viewGraph<?php echo $product_id ?>', function() {
+
+      $('#modalviewGraph').modal("show");
+
+                var product_id = '<?php echo $product_id ?>';
+
+               $.ajax({
+                            url:"ajax/viewgraph",
+                            method:"POST",
+                            data:{product_id:product_id},
+                            
+                            success:function(data){
+                               //the return value from json is giving to the below id(s)
+
+                               $('#display-viewGraph').html(data);
+
+                              }
+                          });
+
+               
+
+              });
+
+
+</script>
+
 
                             <div class="col-lg-4 col-md-6 col-sm-6">
                                 <div class="product"><!-- product -->
@@ -529,10 +558,12 @@ if(isset($username)){
                                             <h2><a href="product-page?product-id=<?php echo $product_id; ?>"><?php echo $prod_name ?></a></h2>
                                         </div>
                                         <div><!-- ratting-star -->
-                    <p>Available <b style="color: #173e43"><?php echo $neg_days ?><?php echo  $count.' '.$suffix; ?></b></p>
-                     <p>Around <?php echo $available_day ?></p>
+                <p>Available <b style="color: #173e43"><?php echo $neg_days ?><?php echo  $count.' '.$suffix; ?></b></p>
+                    <!--  <p>Around <?php echo $available_day ?></p> -->
                                         </div>
-                                        <a href="product-page?product-id=<?php echo $product_id; ?>">
+
+            <p><b class="viewGraph<?php echo $product_id ?>" style="color:#a50d1f"><i class="fa fa-bar-chart-o"></i> View Tracker Graph</b></p>
+                                       
                                         <span class="product-price"><!-- product-Price -->
                                             <span class="product-Price-currencySymbol">
                                                 <span class="product-Price-amount" style="color: #173e43">
@@ -540,26 +571,23 @@ if(isset($username)){
                                                 </span>
                                                 
                                            
-                                                <!-- <ins><span class="product-Price-amount">
-                                                        <del class="product-Price-currencySymbol">N</del><?php echo $prod_price ?>
-                                                    </span>
-                                                </ins> -->
+                
                                             </span>
                                         </span>
-                                            </a>
+                                            
 
                                     <div><!-- ratting-star -->
-                                        <span style="color: #173e43;">BY</span>
-                                        <a href="product-page?product-id=<?php echo $product_id; ?>"><span><?php if($shop_name != ''){echo $shop_name; }else{echo ucfirst($username); } ?></span></a>           
+                                      <!--   <span style="color: #173e43;">BY</span> -->
+                                    <a href="product-page?product-id=<?php echo $product_id; ?>"><span><?php if($shop_name != ''){echo $shop_name; }else{echo ucfirst($username); } ?></span></a>           
                                         </div>
                                         <div><!-- ratting-star -->
                                         
-                                        <a href="product-page?product-id=<?php echo $product_id; ?>"  style="color: #e61b1b">
+                                        <a href="product-page?product-id=<?php echo $product_id; ?>"  style="color: #a50d1f">
                                             <i class="fa fa-map-marker"></i> 
                                             <span style="color: #7cda0a"><?php echo $state_product; ?> State</span>
                                         </a>  
 
-                                        <a href="<?php echo $owner; ?>"  style="color: #e61b1b; float: right;">
+                                        <a href="<?php echo $owner; ?>"  style="color: #a50d1f; float: right;">
                                             <i class="fa fa-user"></i> 
                                             <span style="color: #7cda0a">Visit Shop</span>
                                         </a> 

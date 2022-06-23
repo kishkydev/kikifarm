@@ -3,7 +3,8 @@
 $page_title = 'kikiFarm';
 ?>
 <?php  include ('./inc/header.inc.php'); ?>
-  
+
+    
 
 
 
@@ -39,8 +40,17 @@ $page_title = 'kikiFarm';
                             data-frame_0="x:50,50,31,19;"
                             data-frame_1="e:Linear.easeNone;st:820;sp:600;sR:820;"
                             data-frame_999="o:0;st:w;sR:7580;"
-                            >kikiFarm platform makes farming, selling and buying easy and faster;<br>connecting the farmers and the consumers to maximize profits and buy cheaper respectively. 
+                            >kikiFarm platform makes farming, selling and buying easy and faster;<br>connecting the farmers and the consumers to maximize profits and buy cheaper respectively. <br>
+
+        
+
+         
+
                         </rs-layer>
+
+
+       
+
                         <a
                             id="slider-2-slide-1-layer-3" 
                             class="rs-layer ttm-btn-color-white ttm-btn-style-border ttm-btn ttm-btn-size-md"
@@ -84,6 +94,11 @@ $page_title = 'kikiFarm';
                             data-frame_hover="bgc:#232323;boc:#232323;bos:solid;bow:1px,1px,1px,1px;sp:300ms;"
                             >SHOP NOW 
                         </a>
+
+
+  
+
+
                     </rs-slide>
                     <rs-slide data-key="rs-4" data-title="Slide" data-thumb="images/slides/slider-mainbg-004.jpg" data-anim="ei:d;eo:d;s:d;r:0;t:slotslide-horizontal;sl:d;">
                         
@@ -186,15 +201,23 @@ $page_title = 'kikiFarm';
 
              <!-- zero-padding-section -->
             <section class="ttm-row zero-padding-section mt_90 res-991-mt-0 clearfix">
-                <div class="container">
-                    <div class="row no-gutters"><!-- row -->
-                        <div class="col-lg-6">
+                <div class="container" >
+                    <div class="row no-gutters" ><!-- row -->
+                        <div class="col-lg-6" >
+
+
+
+
+
                             <!-- col-bg-img-twelve -->
                             <div class="col-bg-img-twelve ttm-bg ttm-col-bgimage-yes ttm-bgcolor-white spacing-12 z-1 box-shadow">
                                 <div class="ttm-col-wrapper-bg-layer ttm-bg-layer">
                                     <div class="ttm-bg-layer-inner"></div>
                                 </div><!-- col-bg-img-twelve end-->
-                                <div class="layer-content text-center">
+                                <div class="layer-content text-center" >
+
+
+
                                     <!-- section title -->
                                     <div class="section-title text-center" >
                                         <div class="title-header">
@@ -210,16 +233,13 @@ $page_title = 'kikiFarm';
  -->
 
 
-
-
  <img class="img-fluid qucikSearchImage" height="80" width="80" src="images/search/farmsearch.png" >
  <h5 class="title qucikSearchImage" style="margin-bottom: -35px;">Quick Search Product by Image</h5>
 
 
 
-
-
                                 </div>
+
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -233,8 +253,193 @@ $page_title = 'kikiFarm';
             </section>
             <!-- zero-padding-section end -->
 
-          
+<footer class="footer widget-footer clearfix">
+ <div class="first-footer">
+                <div class="container">
+                    <div class="row">
+                       
+                        
+                     
+<?php
+require_once('azure-speech.html');
+?>
 
+
+
+
+
+     <script>
+  let toggle = () => {
+     let element = document.getElementById("phraseDiv");
+
+     if (element.style.backgroundColor === "aliceblue") {
+       element.style.backgroundColor = "seashell";
+       element.style.borderColor = "chocolate";
+    } else {
+       element.style.backgroundColor = "aliceblue";
+       element.style.borderColor = "indigo";
+    }
+  }
+
+
+//..............
+
+
+
+            //to subsititue or make captain/vicecaptain.......................
+                      
+
+
+                         //to change color to white..........
+$(document).on('click', '#scenarioStartButton', function() {
+
+
+function blink_voice(){
+        $('.blink_voice').fadeOut(500);
+        $('.blink_voice').fadeIn(1000); 
+ document.getElementById('scenarioStartButton').style.color="red"; 
+ 
+    }
+    
+
+    setInterval(blink_voice, 500);
+
+  });
+
+         
+
+
+</script>
+
+
+    <div class="col-lg-6" style="margin-bottom: 20px;">
+
+
+           
+
+      
+<h5 class="custom-heading ttm-textcolor-skincolor text-center" style="font-family: roboto;"><a href="#" class="ttm-textcolor-skincolor"> <span class="fa fa-microphone ttm-textcolor-skincolor"></span> SEARCH PRODUCTS BY VOICE...</a></h5>
+     
+
+
+  <textarea  id="phraseDiv" placeholder="Speak to search ..."
+          style="width: 100%;height: 80px;
+                border:1px solid transparent; font-size: 30px; padding: 20px;
+                 background-color:aliceblue; resize: none; /*border-radius: 10px;*/ overflow:hidden;  text-align: center;">
+</textarea>
+
+<script>
+$(document).ready(function(){
+ 
+ $('#phraseDiv').typeahead({
+  source: function(query, result)
+  {
+   $.ajax({
+    url:"ajax/fetch_cat2",
+    method:"POST",
+    data:{query:query},
+    dataType:"json",
+    success:function(data)
+    {
+     result($.map(data, function(item){
+      return item;
+     }));
+    }
+   })
+  }
+ });
+ 
+});
+
+
+//..............................................................
+
+$(document).on('click', '#find_search', function() {
+
+var find_word = $('#phraseDiv').val(); 
+ 
+
+  if (find_word )  {                       
+            window.location.href = 'search-products2?find_word='+find_word;  
+    }
+    else   {                       
+           
+    }
+                                        
+
+
+         });
+</script>
+<button style="width: 49.5%;" class="blink_voice ttm-btn ttm-btn-size-lg ttm-icon-btn-left ttm-btn-bgcolor-darkgrey"  id="scenarioStartButton" onclick="toggle();">Click Speak</button> 
+<button class="ttm-btn ttm-btn-size-sm  ttm-icon-btn-left ttm-btn-bgcolor-darkgrey" id="scenarioStopButton" disabled="disabled" style="display:none;">Stop</button>
+<button type="button" id="find_search" style="width: 49.5%;" class="ttm-btn ttm-btn-size-lg  ttm-icon-btn-left ttm-btn-bgcolor-skincolor"  ><i class="fa fa-search"></i> Search</button>
+    </div>
+
+
+<div class="col-lg-6">
+
+
+<!-- featured-imagebox-blog -->
+<div class="featured-imagebox featured-imagebox-blog  mb-20" >
+    <div class="row slick_slider blog-slide" data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "dots":true, "arrows":false, "autoplay":true, "infinite":true, "centerMode":false, "responsive": [{"breakpoint":500,"settings":{"slidesToShow": 1}}]}'>
+
+
+
+        <div class="col-lg-12" style="margin-top: 40px;">
+            <div class="">
+                <a href="all-farm-products"><img class="img-fluid rounded-circle" src="images/search/rice.jpg" height="137" width="137"></a>
+            </div>
+              
+        </div>
+        <div class="col-lg-12" style="margin-top: 40px;">
+            <div class="">
+                <a href="all-farm-products"><img class="img-fluid rounded-circle" src="images/search/meat.jpg" height="137" width="137"></a>
+            </div>
+              
+        </div>
+        <div class="col-lg-12" style="margin-top: 40px;">
+            <div class="">
+                <a href="all-farm-products"><img class="img-fluid rounded-circle" src="images/search/chickenmeat.jpg" height="137" width="137"></a>
+            </div>
+              
+        </div>
+        <div class="col-lg-12" style="margin-top: 40px;">
+            <div class="">
+                <a href="all-farm-products"><img class="img-fluid rounded-circle" src="images/search/yam.jpg" height="137" width="137"></a>
+            </div>
+              
+        </div>
+        <div class="col-lg-12" style="margin-top: 40px;">
+            <div class="">
+                <a href="all-farm-products"><img class="img-fluid rounded-circle" src="images/search/vegetable.jpg" height="137" width="137"></a>
+            </div>
+              
+        </div>
+        <div class="col-lg-12" style="margin-top: 40px;">
+            <div class="">
+                <a href="all-farm-products"><img class="img-fluid rounded-circle" src="images/search/carrot.jpg" height="137" width="137"></a>
+            </div>
+              
+        </div>
+
+    </div>
+    
+</div><!-- featured-imagebox-blog end -->
+
+
+
+    
+</div> 
+
+
+
+
+
+
+                    </div>
+                </div>
+ </div>        
+</footer>
 
              <!-- row-title-section -->
             <section class="ttm-row first-row-title-section bg-img12 ttm-bgcolor-darkgrey ttm-bg ttm-bgimage-yes clearfix">

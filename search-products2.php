@@ -16,9 +16,7 @@ $page_title = 'kikiFarm';
 
 
 
-$find_word = $_GET['name'];
-
-
+ $find_word = $_GET['find_word'];
 
  $find_word = str_replace('.', '', $find_word);
 
@@ -31,6 +29,7 @@ if($count_letters > 5){
 
      $search_name = substr($find_word, 0, -1);
 }
+  
 
 ?>
   
