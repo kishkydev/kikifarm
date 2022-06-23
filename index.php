@@ -312,7 +312,7 @@ function blink_voice(){
 </script>
 
 
-    <div class="col-lg-6" style="margin-bottom: 20px;">
+    <div class="col-lg-6" style="">
 
 
            
@@ -380,42 +380,42 @@ var find_word = $('#phraseDiv').val();
 
 
 <!-- featured-imagebox-blog -->
-<div class="featured-imagebox featured-imagebox-blog  mb-20" >
-    <div class="row slick_slider blog-slide" data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "dots":true, "arrows":false, "autoplay":true, "infinite":true, "centerMode":false, "responsive": [{"breakpoint":500,"settings":{"slidesToShow": 1}}]}'>
+<div class="featured-imagebox featured-imagebox-blog  mb-20" style="margin-top: 40px;">
+    <div class="row slick_slider blog-slide" data-slick='{"slidesToShow": 3, "slidesToScroll": 3, "dots":false, "arrows":true, "autoplay":true, "infinite":true, "centerMode":false, "responsive": [{"breakpoint":500,"settings":{"slidesToShow": 1}}]}'>
 
 
 
-        <div class="col-lg-12" style="margin-top: 40px;">
+        <div class="col-lg-12">
             <div class="">
                 <a href="all-farm-products"><img class="img-fluid rounded-circle" src="images/search/rice.jpg" height="137" width="137"></a>
             </div>
               
         </div>
-        <div class="col-lg-12" style="margin-top: 40px;">
+        <div class="col-lg-12">
             <div class="">
                 <a href="all-farm-products"><img class="img-fluid rounded-circle" src="images/search/meat.jpg" height="137" width="137"></a>
             </div>
               
         </div>
-        <div class="col-lg-12" style="margin-top: 40px;">
+        <div class="col-lg-12">
             <div class="">
                 <a href="all-farm-products"><img class="img-fluid rounded-circle" src="images/search/chickenmeat.jpg" height="137" width="137"></a>
             </div>
               
         </div>
-        <div class="col-lg-12" style="margin-top: 40px;">
+        <div class="col-lg-12">
             <div class="">
                 <a href="all-farm-products"><img class="img-fluid rounded-circle" src="images/search/yam.jpg" height="137" width="137"></a>
             </div>
               
         </div>
-        <div class="col-lg-12" style="margin-top: 40px;">
+        <div class="col-lg-12">
             <div class="">
                 <a href="all-farm-products"><img class="img-fluid rounded-circle" src="images/search/vegetable.jpg" height="137" width="137"></a>
             </div>
               
         </div>
-        <div class="col-lg-12" style="margin-top: 40px;">
+        <div class="col-lg-12">
             <div class="">
                 <a href="all-farm-products"><img class="img-fluid rounded-circle" src="images/search/carrot.jpg" height="137" width="137"></a>
             </div>
