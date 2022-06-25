@@ -66,12 +66,12 @@ $result_graph = round($result_graph);
                                                 </div>
                                                 <!-- progress-bar END -->
                                                 <!-- progress-bar -->
-                                                <div class="ttm-progress-bar ttm-textcolor-skincolor" data-percent="5%">
+                                                <div class="ttm-progress-bar ttm-textcolor-skincolor" data-percent="1%">
                                                     <div class="progress-bar-title">Start Time (<b style="color: white"><?php echo $uploaded_date2; ?></b>)</div><!-- progress-bar-TITLE -->
                                                     <div class="progress-bar-inner">
                                                         <div class="progress-bar progress-bar-color-bar_skincolor"></div>
                                                     </div>
-                                                    <div class="progress-bar-percent" data-percent="5" style="color: white">5%</div><!-- progress-bar-PERCENT -->
+                                                    <div class="progress-bar-percent" data-percent="1" style="color: white">1%</div><!-- progress-bar-PERCENT -->
                                                 </div>
                                                 <!-- progress-bar END -->
                                             </div>
