@@ -551,7 +551,7 @@ $basket_logistic_count = mysqli_num_rows($count_basket_logistic);
                                               <li><a href="farm-products-tracker">Food Tracker</a></li>
                                               <li><a href="food-rescue">Food Rescue</a></li>
                                                 
-                                                <li><a href="#">Logistics</a>
+                                                <li><a href="#">Logistic</a>
                                                 <ul>
                                                    
                                                    
@@ -562,7 +562,7 @@ $basket_logistic_count = mysqli_num_rows($count_basket_logistic);
                                                 </ul>
                                                 </li>
 
-                                             <li><a href="video-trainings">Videos</a></li>
+                                             <li><a href="video-trainings">Video</a></li>
 
                                                <li><a href="#">News</a>
                                                 <ul>
