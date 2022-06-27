@@ -495,12 +495,19 @@ var find_word = $('#phraseDiv').val();
                                 <div class="mt-25">
                                     <ul class="ttm-list ttm-list-style-icon style2">
                                         <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="farm-products">Check <b>Farm Items</b></a></span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="shops">Check <b>Farmers' Shops</b></a></span></span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="farm-products-tracker">Check <b>Food Tracker</b></a></span></span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="food-rescue">Check <b>Food Rescue</b></a></span></span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="logistic-in-your-area">Check <b>Logistics & Transportaion</b></a></span></span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="news-feed-nigeria">Check <b>Farming News</b></a></span></span></li>
-                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content showrequest"><a href="javascript:;">Check <b>Request Farm Produce</b></a></span></span></li>
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="shops">Check <b>Farmers' Shops</b></a></span></li>
+
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="farm-products-tracker">Check <b>Food Tracker</b></a></span></li>
+
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="food-rescue">Check <b>Food Rescue</b></a></span></li>
+
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="logistic-in-your-area">Check <b>Logistics & Transportaion</b></a></span></li>
+
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="news-feed-nigeria">Check <b>Farming News</b></a></span></li>
+
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content"><a href="video-trainings">Check <b>Training Videos</b></a></span></li>
+
+                                        <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content showrequest"><a href="javascript:;">Check <b>Request Farm Produce</b></a></span></li>
                                     </ul>
                                 </div>
                                <!--  <div class="">
