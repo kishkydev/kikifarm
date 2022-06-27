@@ -174,13 +174,14 @@ $page_ogtitle = 'kikiFarm';
 <meta name="twitter:site" content="@Outtabox-Tech">
 <meta name="twitter:title" content="<?php echo $page_ogtitle; ?>">
 <meta name="twitter:description" content="<?php echo $page_desc; ?>">
-<meta name="twitter:image" content="<?php echo $page_image; ?>">
+<meta name="twitter:image" content="images/avatar.png">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="<?php echo $page_ogtitle; ?>">
 <meta property="og:description" content="<?php echo $page_desc; ?>">
 <meta property="og:url" content="<?php echo $page_url; ?>">
-<meta property="og:image" content="<?php echo $page_image; ?>">
+<!-- <meta property="og:image" content="<?php echo $page_image; ?>"> -->
+<meta property="og:image" content="images/avatar.png">
 <meta property="fb:app_id" content="292392571492063">
 
 
@@ -549,15 +550,7 @@ $basket_logistic_count = mysqli_num_rows($count_basket_logistic);
                                              <li><a href="shops">Shops</a></li>
                                               <li><a href="farm-products-tracker">Food Tracker</a></li>
                                               <li><a href="food-rescue">Food Rescue</a></li>
-                                             
-                                           
-                                               <li><a href="#">News</a>
-                                                <ul>
-                                                    <li><a href="news-feed-nigeria">Nigeria Agro News</a></li>
-                                                    <li><a href="news-feed-foreign">Foreign Agro News</a></li>
-                                                    <li><a href="news-feed-investor">Investors' Agro News</a></li>
-                                                    <li><a href="#">Agro Forum</a></li>
-                                                </ul>
+                                                
                                                 <li><a href="#">Logistics</a>
                                                 <ul>
                                                    
@@ -567,7 +560,19 @@ $basket_logistic_count = mysqli_num_rows($count_basket_logistic);
                                                     <li><a href="#">Request Logistic</a></li>
                                                     
                                                 </ul>
-                                            </li>
+                                                </li>
+
+                                             <li><a href="video-trainings">Videos</a></li>
+
+                                               <li><a href="#">News</a>
+                                                <ul>
+                                                    <li><a href="news-feed-nigeria">Nigeria Agro News</a></li>
+                                                    <li><a href="news-feed-foreign">Foreign Agro News</a></li>
+                                                    <li><a href="news-feed-investor">Investors' Agro News</a></li>
+                                                    <li><a href="#">Agro Forum</a></li>
+                                                </ul>
+                                               
+                                            
                                            <!--  <li><a href="#">Pages</a>
                                                 <ul>
                                                     <li><a href="aboutus-01.html">About Us 1</a></li>
