@@ -157,7 +157,13 @@
                                             <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-icon-btn-left ttm-btn-bgcolor-darkgrey btn-block" href="#" title="" style="color: white; font-family:tahoma; font-family:tahoma"><i class="fa fa-inbox"></i> View SMS messages</a>
                                             <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-icon-btn-left ttm-btn-bgcolor-darkgrey btn-block" href="#" title="" style="color: white; font-family:tahoma; font-family:tahoma"><i class="fa fa-edit"></i> Edit Farm Products</a>
 
+                                            <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-icon-btn-left ttm-btn-bgcolor-skincolor btn-block" href="create-barcode" title="" style="color: white; font-family:tahoma; font-family:tahoma"><i class="fa fa-barcode"></i> Create Barcode for delivery</a>
+
+                                            <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-icon-btn-left ttm-btn-bgcolor-skincolor btn-block" href="scan-barcode" title="" style="color: white; font-family:tahoma; font-family:tahoma"><i class="fa fa-barcode"></i> Scan Barcode Delivered</a>
+
                                              <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-icon-btn-left ttm-btn-bgcolor-darkgrey btn-block" href="#" title="" style="color: white; font-family:tahoma; font-family:tahoma"><i class="fa fa-eye"></i> View Customers' Orders</a>
+
+
 
                                          <?php else : ?>
                    
@@ -260,7 +266,7 @@
 $whattext = "*kiKifarm:* Hello $usernameShop";
 ?>     
  <div class="ttm-btn-box pb-20">
-    <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-icon-btn-left ttm-btn-bgcolor-darkgrey showsms" href="#" title="" style="color: white; font-family:tahoma; font-family:tahoma"><b>Send SMS</b> <i class="fa fa-envelope"></i></a>
+    <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-icon-btn-left ttm-btn-bgcolor-darkgrey showsms" href="javacript:;" title="" style="color: white; font-family:tahoma; font-family:tahoma"><b>Send SMS</b> <i class="fa fa-envelope"></i></a>
 </div>
 
 <div class="ttm-btn-box pb-20">
@@ -334,7 +340,7 @@ $whattext = "*kiKifarm:* Hello $usernameShop";
 
 
 <?php
-  $whatsapp = urlencode('https://kikifarm.com/'.$userP);
+  $whatsapp = urlencode('https://kikifarm-app.azurewebsites.net/'.$userP);
   ?>
 
 

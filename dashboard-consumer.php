@@ -155,6 +155,11 @@
 
                                             <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-icon-btn-left ttm-btn-bgcolor-darkgrey btn-block" href="#" title="" style="color: white; font-family:tahoma; font-family:tahoma"><i class="fa fa-inbox"></i> View SMS messages</a>
                                            
+
+                                            
+
+                                            <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-icon-btn-left ttm-btn-bgcolor-skincolor btn-block" href="scan-barcode" title="" style="color: white; font-family:tahoma; font-family:tahoma"><i class="fa fa-barcode"></i> Scan Barcode Delivered</a>
+
                                              <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-icon-btn-left ttm-btn-bgcolor-darkgrey btn-block" href="#" title="" style="color: white; font-family:tahoma; font-family:tahoma"><i class="fa fa-eye"></i> View Your Basket Orders</a>
 
                                                <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-rounded ttm-icon-btn-left ttm-btn-bgcolor-darkgrey btn-block" href="#" title="" style="color: white; font-family:tahoma; font-family:tahoma"><i class="fa fa-eye"></i> View Your Logistic Orders</a>
