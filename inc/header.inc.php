@@ -125,10 +125,10 @@ $phoneShop = $rowShop["phone"];
                 $shop_nameShop = mysqli_real_escape_string($con,$shop_nameShop);
 
 if($page_title == 'Shop'){
-     $page_url = 'https://www.kikifarm.com/'.urldecode($userP);
+     $page_url = 'https://kikifarm-app.azurewebsites.net/'.urldecode($userP);
 
    
-        $page_image = 'https://www.kikifarm.com/'.$profilepix_dbShop; 
+        $page_image = 'https://kikifarm-app.azurewebsites.net/'.$profilepix_dbShop; 
        
     if($descriptionShop != ''){
         $page_desc = $descriptionShop;
@@ -146,8 +146,8 @@ if($page_title == 'Shop'){
     
     }//the first if ends here....................
     else{                   
-$page_image = 'https://www.kikifarm.com/images/avatar.png'; 
-$page_url = 'https://www.kikifarm.com/';
+$page_image = 'https://kikifarm-app.azurewebsites.net/images/avatar.png'; 
+$page_url = 'https://kikifarm-app.azurewebsites.net/';
 $page_desc = 'kikiFarm platform makes farming, selling and buying easy and faster; connecting the farmers and the consumers to maximize profits and buy cheaper respectively';
 $page_ogtitle = 'kikiFarm';
     }
