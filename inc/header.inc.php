@@ -529,7 +529,7 @@ $basket_logistic_count = mysqli_num_rows($count_basket_logistic);
                                     </div>
                                     <nav id="menu" class="menu" >
                                         <ul class="dropdown">
-                                           <li class="active"><a href="index">Home</a>
+                                           <li class="active"><a href="index"><i class="fa fa-home" style="font-size:15px;"></i></a> </li>
                                                 <!-- <ul>
                                                     <li><a href="index.html">Homepage 1</a></li>
                                                     <li><a href="home-2.html">Homepage 2</a></li>
@@ -545,10 +545,11 @@ $basket_logistic_count = mysqli_num_rows($count_basket_logistic);
                                                         </ul>
                                                     </li>
                                                 </ul> -->
-                                            </li>
+                                           
                                             <li><a href="farm-products">Farm Items</a></li>
+                                            <li><a href="farm-products-tracker">Tracker</a></li>
                                              <li><a href="shops">Shops</a></li>
-                                              <li><a href="farm-products-tracker">Food Tracker</a></li>
+                                              
                                               <li><a href="food-rescue">Food Rescue</a></li>
                                                 
                                                 <li><a href="#">Logistic</a>
@@ -564,15 +565,15 @@ $basket_logistic_count = mysqli_num_rows($count_basket_logistic);
 
                                              <li><a href="video-trainings">Video</a></li>
 
-                                               <li><a href="#">News</a>
+                                            <li><a href="#">News</a>
                                                 <ul>
                                                     <li><a href="news-feed-nigeria">Nigeria Agro News</a></li>
                                                     <li><a href="news-feed-foreign">Foreign Agro News</a></li>
                                                     <li><a href="news-feed-investor">Investors' Agro News</a></li>
                                                     <li><a href="#">Agro Forum</a></li>
                                                 </ul>
-                                               
-                                            
+                                            </li>
+                                                
                                            <!--  <li><a href="#">Pages</a>
                                                 <ul>
                                                     <li><a href="aboutus-01.html">About Us 1</a></li>
