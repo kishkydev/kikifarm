@@ -1,122 +1,67 @@
 <?php
+session_start();
+ob_start();
+$page_title = 'Taidob College';
 
-$page_title = 'kikiFarm';
+include ('./inc/header.inc.php'); 
+
+
 ?>
-<?php  include ('./inc/header.inc.php'); ?>
-  
-<script src="js2/adapter.min.js"></script>
-<script src="js2/instascan.min.js"></script>
-<script src="js2/vue.min.js"></script>
-
- <!-- page-title -->
-        <div class="ttm-page-title-row">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12"> 
-                        <div class="title-box text-left">
-                            <div class="page-title-heading">
-                                <h1 class="title">Scan Barcode</h1>
-                            </div><!-- /.page-title-captions -->
-                            <div class="breadcrumb-wrapper">
-                                <span>
-                                    <a title="Homepage" href="index"><i class="ti ti-home"></i>&nbsp;&nbsp;Home</a>
-                                </span>
-                                <span class="ttm-bread-sep ttm-textcolor-white">&nbsp;   →  &nbsp;</span>
-                                <span class="ttm-textcolor-skincolor">Scan Barcode</span>
-                            </div>  
-                        </div>
-                    </div><!-- /.col-md-12 -->  
-                </div><!-- /.row -->  
-            </div><!-- /.container -->                      
-        </div><!-- page-title end-->
-       
-
-        <!--site-main start-->
-        <div class="site-main">
-
-          
-            <!-- contactbox-section -->
-            <section class="ttm-row contact-form-section clearfix">
-                <div class="container">
-                    <div class="row"><!-- row -->
-                        
+<script src="js/adapter.min.js"></script>
+<script src="js/instascan.min.js"></script>
+<script src="js/vue.min.js"></script>
 
 
-             <div class="col-lg-3">
+
+<!--Breadcrumb start-->
+<div class="ed_pagetitle">
+<div class="ed_img_overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-4 col-sm-6">
+                <div class="page_title">
+                    <h2>Scanner</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-6">
+                <ul class="breadcrumb">
+                    <li><a href="graduation-register.php">home</a></li>
+                    <li><i class="fa fa-chevron-left"></i></li>
+                    <li><a href="#">Scanner</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Breadcrumb end-->
  
-
-
-
-             </div>
-
-
-                        <div class="col-lg-6">
-
-
-                             <!-- section title -->
-                            <div class="section-title clearfix">
-                                <div class="title-header">
-                                    <h2 class="title">Scan Bar Code</h2>
-                                </div>
-                                <div class="heading-seperator">
-                                    <span></span>
-                                </div>
-                            </div><!-- section title end -->
 
 <?php
 if(isset($_POST['text'])){
 
-        $code =  $_POST['text'];
-
-$query2 = mysqli_query($con, "SELECT * FROM barcode WHERE code = '$code' ");
-
-$row2 = mysqli_fetch_assoc($query2);
-
-$product = $row2['product'];
-
-$description= $row2['description'];
-
-$logistic = $row2['logistic'];
-
-$phone = $row2['phone'];
-
-$output =  "<b style='color:#be160d'>Product Name</b>: $product<hr>"; 
-$output .=  "<b style='color:#be160d'>Description</b>: $description<hr>"; 
-$output .=  "<b style='color:#be160d'>Logistic Details</b>: $logistic<hr>"; 
-$output .=  "<b style='color:#be160d'>Sender Phone</b>: $phone<hr>"; 
-
-echo $output;
-
+        echo $_POST['text'];
 }
 ?>
-
-                            
-
-                            <p style="color: #7cda0a">Fill the informations below to create a bar code</b></p>
-
-                      <?php if (isset($errormsg)) : ?>
-                                                              <div class="error1"><?php echo $errormsg; ?></div>  
-                                                         <?php endif; ?>
-                                                         <?php if (isset($successmsg)) : ?>
-                                                               <div class="success1"><?php echo $successmsg; ?></div> 
-                                                        <?php endif; ?>       
-                            
-                            
-                            <div class="spacing-6 ttm-bgcolor-grey mt-0 mb-0">
-                                
-
-        <form class="ed_teacher_form" action="#" method="post" role="form">
+  
+<!--teacher_form_wrapper start-->
+<div class="ed_graysection ed_toppadder80 ed_bottompadder80">
+  <div class="container">
+    <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-lg-offset-2 col-md-offset-2">
+                <div class="ed_teacher_div">
+                     
+            
+            <form class="ed_teacher_form" action="graduation-register5.php" method="post" role="form">
             
                          
                 
                <div class="form-group">              
-                <input  type="hidden" name="text" id="text" readonyy=""   class="form-control form-control-lg" placeholder="Enter student Registration Number">
+                <input  type="text" name="text" id="text" readonyy=""   class="form-control form-control-lg" placeholder="Enter student Registration Number">
                 </div>
 
                </form>
-
-
-            <div>
+    
+                    <div>
                <video id="preview" width="100%"></video>
              </div>
 
@@ -149,34 +94,23 @@ echo $output;
 
                         </script>
                 
-
-
-
-
-                            </div>
-                        </div>
-
-
-
-
-                       
-
-
-
-
-                    </div><!-- row end -->
+                         
+                
+              
                 </div>
-            </section>
-            <!-- contactbox-section end -->
-           
-
-        </div><!--site-main end-->
 
 
-      
-       
+            </div>
 
-       
-  
-  
-<?php  include ('./inc/footer.inc.php'); ?>
+
+
+            
+            
+
+    </div>
+  </div>  
+</div>
+
+<!--teacher_form_wrapper end-->  
+
+<?php include ('./inc/footer.inc.php');  ?>  
