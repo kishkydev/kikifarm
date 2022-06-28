@@ -4,9 +4,7 @@ $page_title = 'kikiFarm';
 ?>
 <?php  include ('./inc/header.inc.php'); ?>
   
-<script src="js2/adapter.min.js"></script>
-<script src="js2/instascan.min.js"></script>
-<script src="js2/vue.min.js"></script>
+
 
  <!-- page-title -->
         <div class="ttm-page-title-row">
@@ -180,3 +178,8 @@ echo $output;
   
   
 <?php  include ('./inc/footer.inc.php'); ?>
+
+
+<script src="js2/adapter.min.js"></script>
+<script src="js2/instascan.min.js"></script>
+<script src="js2/vue.min.js"></script>
